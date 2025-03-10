@@ -3,30 +3,66 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點推薦</title>
 	<style >
-		#container{ margin: 0 auto;width: 1024px; }
+		#container { margin:0 auto; width: 1024px; }
         td { text-align: center; padding: 10px;}
         .r_img {border-radius: 50%; width: 300px;height: 300px;}
         .r_img1 {border-radius: 20px;}
+
+        iframe {border-radius: 20px;}
+
         .large_font {font-size: 50px;}
         .large_font1 {font-size: 30px;}
         .large_font1:hover {background-color:black; color:white; }
         .r_img:hover {rotate: 10deg; opacity:50%; }
+
+
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+
 	</style>
-</head>
+</head>	
 <body>
 
+<div class="navbar">
+	<a href="#home">回首頁</a>
+   <a href="#s1">台中國家歌劇院</a>
+   <a href="#s2">台中州廳</a>
+   <a href="#s3">審計新村</a>
+</div
+
 <div id="container">
-     <table border="1">
+     <table >
         <tr>
 			<td colspan="2" >
 				<p>
 				   <font class="large_font">台中市景點推薦</font>
-			    </p>
-			    <p>
-                   <img src="00.jpeg" class="r_img1">
-                <p>
+			   </p>
+			   <p>
+                   <iframe frameborder="0" src="slideshow.html" width="1024" height="350"></iframe>
+            </p>
 			</td>
 		</tr>
         
@@ -42,7 +78,7 @@
 
 		<tr>
 			<td>
-				<img src="01.jpeg" class="r_img">
+				<img id="s1" src="01.jpeg" class="r_img">
 			</td>
 
 			<td>
@@ -66,22 +102,30 @@
 
             </td>
 			<td>
-				<img src="02.jpeg">
+				<img img id="s2" src="02.jpeg" class="r_img">
 			</td>
 		</tr>
 		
 
         <tr>
 			<td>
-				<img src="03.jpeg">
+				<img img id="s3" src="03.jpeg" class="r_img"> 
 			</td>
 			<td>
 				<p class="large_font1">審計新村</p>
 				<p>審計新村位於台中市西區，原為臺灣省政府審計處員工宿舍，在凍省之後成了閒置空間荒廢多年，近年配合台中市政府勞工局「摘星青年、築夢台中」創業基地進駐計畫，重新規劃轉型成為創業基地與文創園區。</p>
                 
                 <p>圖：審計新村
+                <p>所在位置：台中市西區民生路368巷</p>
             </td>
 		</tr>
+
+
+         <tr>
+			 <td colspan="2" >
+        		<iframe frameborder="0" src="https://www.google.com/maps/d/embed?mid=1mXJu3U574LOEqZBqAmvBOMC6pZqIHwk&ehbc=2E312F" width="950" height="600"></iframe>
+		   </td>
+       </tr>
 
 
 		<tr>
@@ -89,7 +133,7 @@
             	<p><font>網頁製作:蔡松穎</font></p>
             	</td>
         </tr>
-</table>
+		</table>
 </div>
 
 </body>
